@@ -1,4 +1,4 @@
-# API REST for the Drone Engineeging Ecosystem
+# API REST for the Drone Engineering Ecosystem
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -15,8 +15,8 @@ The APIREST module is responsible for storing data on the ground and retrieving 
       
 As an example, the user can design a flightplan using some of the front-end modules of the ecosystem and store it in the APIREST module. Later, the user can retrieve the flight plan, generate the flight associated with it, and send it to the air APIREST module to allow the autopilot to execute it. In the event that the flightplan includes the obtaining of photos or videos, when the flight has landed successfully, the air APIREST module will send all the collected information to this APIREST module, to allow the possibility of the front-end module to show this information to the user.   
 
-
 ## Requirements
+
 Before starting with the installation, make sure you have the following software installed on your system:
 
 - Python 3.7
@@ -39,6 +39,7 @@ In order to access the Classpip server, if the user is not in the EETAC, there's
 - [Install FortiClient VPN](https://serveistic.upc.edu/ca/upclink/documentacio/connexio-a-myupclink-des-de-windows/)
 
 ## Local set up
+
 To run and contribute, clone this repository to your local machine and install the requirements.  
     
 To run the APIREST in localhost for simulation you must edit the run/debug configuration in PyCharm, as shown in the image, in order to pass the required arguments to the script. 
@@ -88,7 +89,7 @@ If this error is received, it means that the server is already running, if it wa
 sudo netstat -tupln 
 ````
 
-This instruction shows all the ungoing processes in the server, in their specific IP address, and the one that is searched is the one executed in 0.0.0.0:8105. When located, the important value is the PID of this process, as its the value that identifies it, and the one which is going to be used to kill it.
+This instruction shows all the ungoing processes in the server, in their specific IP address, and the one that is searched is the one executed in 0.0.0.0:8105. When located, __the important value is the PID of this process__, as its the value that identifies it, and the one which is going to be used to kill it.
 
 When this value is known, the command that needs to be executed is the following one, identifing "PID" as the PID found previously:
 
@@ -99,6 +100,7 @@ sudo kill -15 "PID"
 If this process is executed correctly, retrying the uvicorn instruction should return the expected behavior, starting the ground APIREST module.
 
 ## Endpoints
+
 Once the service has started, navigate to http://147.83.249.79:8105 in the case of server set up, or http://127.0.0.1:8000 in the case of local one, to see and try all the different API endpoints.
 
 ![](https://github.com/JordiLlaveria/GroundAPIRESTDEE/blob/manager/assets/Endpoints.JPG)
@@ -106,6 +108,7 @@ Once the service has started, navigate to http://147.83.249.79:8105 in the case 
 You will easily see the data models involved in the different API endpoints.    
 
 ## Tutorial
+
 This is a tutorial (in Spanish) to learn how to install the APIREST and create (and test) new endpoints:
     
 [Tutorial on APIREST](https://www.youtube.com/playlist?list=PLyAtSQhMsD4o3VIWiQ7xYB9dx7f-C8Ju1)      
