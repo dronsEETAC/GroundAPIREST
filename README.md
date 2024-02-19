@@ -109,9 +109,10 @@ You will easily see the data models involved in the different API endpoints.
 
 ## Tutorial
 
-This is a tutorial (in Spanish) to learn how to install the APIREST and create (and test) new endpoints:
-    
-[Tutorial on APIREST](https://www.youtube.com/playlist?list=PLyAtSQhMsD4o3VIWiQ7xYB9dx7f-C8Ju1)      
+This is a tutorial (in Spanish) to learn how to install the APIREST and create (and test) new endpoints:      
+     
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-video_tutorial_APIREST-pink.svg)](https://www.youtube.com/playlist?list=PLyAtSQhMsD4o3VIWiQ7xYB9dx7f-C8Ju1)
+
      
 
 
